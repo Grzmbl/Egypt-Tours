@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projektstyle.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+    <link rel="stylesheet" href="Menu/menustyle.css" type="text/css"/>
+    <link rel="stylesheet" href="plik1.css"/>
+
+    <title>Projekt zaliczeniowy</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="links">
+            <a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="icon-youtube-play"></i></a>
+            <a href="https://pl-pl.facebook.com/"><i class="icon-facebook-official"></i></a>
+        </div>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="Projekt.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="CV.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Kontakt</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Formularz.html">
+                    <span class="icon">
+                        <ion-icon name="pencil-outline"></ion-icon>
+                    </span>
+                    <span class="text">Logowanie</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Cennik.html">
+                    <span class="icon">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </span>
+                    <span class="text">Cennik</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Galeria.html">
+                    <span class="icon">
+                        <ion-icon name="images-outline"></ion-icon>
+                    </span>
+                    <span class="text">Galeria</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <header class="logo"><img src="logo.png" alt="" width="578" height="606"></header>
+    <div class="parallax_section parallax_image_first"></div>
+    <header class="scam"><h1><i>Wycieczki do Egiptu w najlepzej cenie!</i></h1><p>Na naszej stronie znajdziesz najatrakcyjniejsze oferty wycieczek do najpiękniejszych miejsc w Egipcie!</p></header>
+    <div class="parallax_section parallax_image_second"></div>
+    <div class="zdjecia">
+        <div class="img">
+            <img src="img1.jpg" height="300px" width="100%">
+        </div>
+        <div class="img">
+            <img src="img2.jpg" height="300px" width="100%">
+        </div>
+        <div class="img">
+            <img src="img3.jpeg" height="300px" width="100%">
+        </div>
+    </div>
+    <div class="sekcjatekst">
+        <h1><b><i>Firma Egypt Tours</i></b></h1>
+        <h2>Podróże do Egiptu najtaniej w Polsce</h2>
+        <p>Na stronie firmy Egypt Tours znajdziesz najlepsze oferty wycieczek do Egptu, jakich nie znajdziesz nigdzie indziej</p>
+    </div>
+    <div class="sekcjakontakt">
+        <form></form>
+            <input class="polekontakt" type="text" required placeholder="Imię">
+            <input class="polekontakt" type="text" required placeholder="Nazwisko">
+            <input class="buttonzapisz" type="submit" onclick="alert('Zostałeś zapisany')" value="Zapisz się">
+        </form>
+    </div>
+    <div id="slider">
+        <figure>
+            <img src="slider1.jpg">
+            <img src="slider2.jpg">
+            <img src="slider5.jpg">
+             <img src="slider4.jpg">
+        </figure>
+    </div>
+    <div class="blogspace">
+        <div class="blogimg">
+            <img src="blog1.jpg">
+            <div class="blogtxt">Zwiedzanie Piramid w Gizie</div>
+        </div>
+        <div class="blogimg">
+            <img src="blog2.jpg">
+            <div class="blogtxt">Stolica Egiptu: Kair</div>
+        </div>
+        <div class="blogimg">
+            <img src="blog3.jpg">
+            <div class="blogtxt">Podroże przez Saharę</div>
+        </div>
+        <div class="blogimg">
+            <img src="blog4.jpg">
+            <div class="blogtxt">Port w pięknej Aleksandrii</div>
+        </div>
+    </div>
+    <ul class="side">
+        <li style="--i:5;"><a href="Projekt.html">Home</a></li>
+        <li style="--i:4;"><a href="CV.html">Kontakt</a></li>
+        <li style="--i:3;"><a href="Formularz.html">Logowanie</a></li>
+        <li style="--i:2;"><a href="Cennik.html">Cennik</a></li>
+        <li style="--i:1;"><a href="Galeria.html">Galeria</a></li>
+    </ul>
+    <div class="menudolne">
+        <p><a href="Projekt.html">HOME</a>     <a href="CV.html">KONTAKT</a>     <a href="Formularz.html">LOGOWANIE</a>     <a href="Cennik.html">CENNIK</a>     <a href="Galeria.html">GALERIA</a></p>
+    </div>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+</html>
